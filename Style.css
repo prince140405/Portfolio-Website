@@ -124,15 +124,18 @@ body{
 .FirstElement .profile-photo{
   width: 300px;
   height:  300px;
-  border-radius: 50%;
+  border-radius: 16px;
   overflow: hidden;
   border: 15px solid #444444;
   box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
-profile-photo .img{
+profile-photo img{
   height: 100%;
   width: 100%;
   transition: 0.5s;
+  object-fit: cover;
+  object-position: bottom bottom;
+  border-radius: 24px;
 }
 .FirstElement .profile-photo img:hover{
   transform: scale(1.2);
